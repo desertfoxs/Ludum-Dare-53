@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3igp6e5p4dgs"]
+[gd_scene load_steps=4 format=3 uid="uid://cmht8w0kg2qsl"]
 
-[ext_resource type="PackedScene" uid="uid://bvmekbsjodrpd" path="res://character.tscn" id="1_1k7sc"]
+[ext_resource type="PackedScene" uid="uid://gfy415hy3y1p" path="res://character.tscn" id="1_0lawh"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_my70h"]
 
@@ -9,11 +9,6 @@ size = Vector2(1358, 46)
 
 [node name="Node2D" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-106.0]
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_1k7sc")]
-position = Vector2(180, 434)
-collision_layer = 3
-collision_mask = 3
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(564, 615)
@@ -25,3 +20,6 @@ texture = SubResource("CanvasTexture_my70h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("RectangleShape2D_5guy2")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_0lawh")]
+position = Vector2(220.75, 100.75)
