@@ -72,7 +72,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("4_4kh0y")
 
 [node name="ParallaxLayer5" type="ParallaxLayer" parent="jugador_delivery/ParallaxBackground"]
-motion_scale = Vector2(1.5, 1.5)
+motion_scale = Vector2(1.5, 1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="jugador_delivery/ParallaxBackground/ParallaxLayer5"]
@@ -80,33 +80,50 @@ position = Vector2(569, 381)
 scale = Vector2(2, 1.70625)
 texture = ExtResource("5_eqw6u")
 
-[node name="ParallaxLayer6" type="ParallaxLayer" parent="jugador_delivery/ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-motion_mirroring = Vector2(1152, 0)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="jugador_delivery/ParallaxBackground/ParallaxLayer6"]
-position = Vector2(-196, 870)
-scale = Vector2(1.19677, 0.000183578)
-physics_material_override = SubResource("PhysicsMaterial_0fgy1")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="jugador_delivery/ParallaxBackground/ParallaxLayer6/StaticBody2D"]
-position = Vector2(239.812, -70814.5)
-scale = Vector2(0.837858, -3248.65)
-polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, 1059, 340.544, 1059, 316.484)
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="jugador_delivery/ParallaxBackground/ParallaxLayer6"]
-position = Vector2(-196, 870)
-scale = Vector2(1.19677, 0.000183578)
-physics_material_override = SubResource("PhysicsMaterial_0fgy1")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="jugador_delivery/ParallaxBackground/ParallaxLayer6/StaticBody2D2"]
-position = Vector2(238.977, -1.36727e+06)
-scale = Vector2(0.837858, -3248.65)
-polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, 1059, 340.544, 1059, 316.484)
-
-[node name="Camera2D" type="Camera2D" parent="jugador_delivery"]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(3, -2.00006)
 scale = Vector2(1, 2.50599)
 limit_left = 1
+limit_bottom = 10000
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Camera2D"]
+position = Vector2(-292, 220.272)
+scale = Vector2(1.19677, 7.32555e-05)
+physics_material_override = SubResource("PhysicsMaterial_0fgy1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera2D/StaticBody2D2"]
+position = Vector2(238.977, -1.33459e+06)
+scale = Vector2(0.837858, -3248.65)
+polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, 1059, 340.544, 1059, 316.484)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Camera2D"]
+position = Vector2(-292, 220.272)
+scale = Vector2(1.19677, 7.32555e-05)
+physics_material_override = SubResource("PhysicsMaterial_0fgy1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera2D/StaticBody2D3"]
+position = Vector2(239.812, -59920.5)
+scale = Vector2(0.837858, -3248.65)
+polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, -97.7339, 736.109, -124.661, 736.109, -117.68, 315.236)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Camera2D"]
+position = Vector2(-292, 220.272)
+scale = Vector2(1.19677, 7.32555e-05)
+physics_material_override = SubResource("PhysicsMaterial_0fgy1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera2D/StaticBody2D4"]
+position = Vector2(1226.64, -81709.5)
+scale = Vector2(0.837858, -3248.65)
+polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, -97.7339, 736.109, -124.661, 736.109, -117.68, 315.236)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Camera2D"]
+position = Vector2(-292, 220.272)
+scale = Vector2(1.19677, 7.32555e-05)
+physics_material_override = SubResource("PhysicsMaterial_0fgy1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Camera2D/StaticBody2D"]
+position = Vector2(239.812, -70814.5)
+scale = Vector2(0.837858, -3248.65)
+polygon = PackedVector2Array(-95.7648, 316.483, -94.767, 342.636, 1059, 340.544, 1059, 316.484)
