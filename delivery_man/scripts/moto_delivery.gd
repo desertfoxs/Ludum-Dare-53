@@ -23,6 +23,6 @@ func _physics_process(delta):
 		velocidad.x = velocidad_moto
 	else:
 		velocidad.y = 0
-		velocidad.x = 0
+		velocidad.x = 20
 	#velocidad_moto = velocidad_moto.normalized()*aceleracion
 	move_and_slide()

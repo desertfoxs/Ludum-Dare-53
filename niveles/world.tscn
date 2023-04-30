@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmht8w0kg2qsl"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="PackedScene" uid="uid://gfy415hy3y1p" path="res://character.tscn" id="1_0lawh"]
+[ext_resource type="PackedScene" uid="uid://gfy415hy3y1p" path="res://delivery_man/escenas/character.tscn" id="1_0lawh"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_my70h"]
 
